@@ -1,0 +1,31 @@
+body {
+    font-family: DM Sans;
+    font-weight: 300;
+    padding-top: 90px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+h1 {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 150px;
+
+}
+
+.front-page {
+    font-size: 50px;
+    text-align: center;
+    top: 120px;
+    height: 95%;
+    width: 100%;
+    padding: 15px;
+    border-style: hidden;
+    color: white;
+    box-shadow: 0 0 20px 20px skyblue;
+    border-radius: 50px;
+    border-style: inset;
+    border-width: 5px;
+    border-image: linear-gradient(to left, navy, deepskyblue);
+    background-image: linear-gradient(to bottom right, deepskyblue, navy);
+}
