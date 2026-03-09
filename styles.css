@@ -20,7 +20,7 @@ h1 {
     height: fit-content;
     font-size: 40px;
     top: 120px;
-    width: 100%;
+    width: fit-content;
     padding: 15px;
     color: white;
     box-shadow: 0 0 20px 15px skyblue;
@@ -69,6 +69,7 @@ h1 {
     color: black;
     font-size: 15px;
     height: 74px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
