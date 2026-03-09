@@ -13,7 +13,9 @@ h1 {
 
 }
 
-.front-page {
+.front-section1,
+.front-section2 {
+    display: block;
     font-size: 50px;
     text-align: center;
     top: 120px;
@@ -22,10 +24,26 @@ h1 {
     padding: 15px;
     border-style: hidden;
     color: white;
-    box-shadow: 0 0 20px 20px skyblue;
-    border-radius: 50px;
-    border-style: inset;
-    border-width: 5px;
-    border-image: linear-gradient(to left, navy, deepskyblue);
+    box-shadow: 0 0 0px 0px skyblue;
+    border-radius: 50px 50px 0px 0px;
     background-image: linear-gradient(to bottom right, deepskyblue, navy);
+    margin-bottom: 0px;
+}
+
+.front-section2 {
+    display: block;
+    background-image: linear-gradient(to top right, deepskyblue, navy);
+    margin: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.front-section2 h1 {
+    font-size: 75px;
+}
+
+.main-grid {
+    box-shadow: 0 0 20px 20px skyblue;
 }
