@@ -22,9 +22,8 @@ h1 {
     height: 95%;
     width: 100%;
     padding: 15px;
-    border-style: hidden;
     color: white;
-    box-shadow: 0 0 0px 0px skyblue;
+    box-shadow: 0 0 20px 5px skyblue;
     border-radius: 50px 50px 0px 0px;
     background-image: linear-gradient(to bottom right, deepskyblue, navy);
     margin-bottom: 0px;
