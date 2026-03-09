@@ -9,36 +9,97 @@ body {
 h1 {
     font-family: DM Sans;
     font-weight: 700;
-    font-size: 150px;
-
+    font-size: 75px;
+    margin: 0px;
 }
 
 .front-section1,
-.front-section2 {
+.front-section2,
+.front-section3 {
     display: block;
-    font-size: 50px;
-    text-align: center;
+    height: fit-content;
+    font-size: 40px;
     top: 120px;
-    height: 95%;
     width: 100%;
     padding: 15px;
     color: white;
-    box-shadow: 0 0 20px 5px skyblue;
+    box-shadow: 0 0 20px 15px skyblue;
     border-radius: 50px 50px 0px 0px;
     background-image: linear-gradient(to bottom right, deepskyblue, navy);
-    margin-bottom: 0px;
+
 }
 
-.front-section2 {
+.front-section2,
+.front-section3 {
     display: block;
     background-image: linear-gradient(to top right, deepskyblue, navy);
     margin: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0px;
+
 }
 
-.front-section2 h1 {
-    font-size: 75px;
+.front-section3 {
+    border-radius: 0px 0px 20px 20px;
+    background-image: linear-gradient(to bottom right, deepskyblue, navy);
+
+}
+
+.sidebar {
+    border-style: inset;
+    border-color: lightblue;
+    background-color: lightblue;
+    position: fixed;
+    top: 0px;
+    left: -6px;
+    bottom: 0px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-right: 0px;
+    font-family: DM Sans;
+
+}
+
+.sidebar-link,
+.sidebar-link:after {
+    background-color: deepskyblue;
+    color: black;
+    font-size: 15px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    font-family: DM Sans;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 10px;
+    transition-duration: 1s;
+
+
+}
+
+.sidebar-link:hover {
+    background-color: rgba(0, 234, 255, 0.638);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    color: darkblue;
+}
+
+.sidebar-link img {
+    height: 30px;
+    margin: 4px;
+}
+
+.sidebar-link span {
+    font-size: 10px;
+    text-align: center;
+    line-height: 5px;
+    font-family: DM Sans;
 }
