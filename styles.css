@@ -40,7 +40,7 @@ h1 {
     height: fit-content;
     font-size: 40px;
     top: 120px;
-    width: min(1000px, 1fr);
+    width: min(200px, 1fr);
     padding: 15px;
     color: white;
     box-shadow: 0 0 20px 15px cornflowerblue;
