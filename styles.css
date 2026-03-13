@@ -41,7 +41,7 @@ h1 {
     font-size: 40px;
     top: 120px;
     width: min(200px, 1fr);
-    padding: 15px;
+    padding: 3%;
     color: white;
     box-shadow: 0 0 20px 15px cornflowerblue;
     border-radius: 50px;
