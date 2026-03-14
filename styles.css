@@ -1,7 +1,7 @@
 body {
     font-family: DM Sans;
     font-weight: 300;
-    padding-top: 150px;
+    padding-top: 200px;
     padding-left: 13%;
     padding-right: 60px;
     background-color: cornflowerblue;
@@ -35,10 +35,12 @@ h1 {
 
 .front-section1,
 .front-section2,
-.front-section3 {
+.front-section3,
+.front-section4,
+.front-section5 {
     display: block;
     height: fit-content;
-    font-size: 40px;
+    font-size: 30px;
     top: 120px;
     width: min(200px, 1fr);
     padding: 3%;
@@ -106,4 +108,52 @@ h1 {
     text-align: center;
     line-height: 5px;
     font-family: DM Sans;
+}
+
+.nav-tabs {
+    position: absolute;
+    top: 100px;
+    left: 13%;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.nav-btn {
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: DM Sans;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-btn:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.front-section1,
+.front-section2,
+.front-section3,
+.front-section4,
+.front-section5 {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -16,7 +16,12 @@
 
 <body>
   <div class="header"> StudyOS</div>
-
+  <div class="nav-tabs">
+    <button class="nav-btn active" onclick="showSection(1)">Where are you?</button>
+    <button class="nav-btn" onclick="showSection(2)">Everything In One Place</button>
+    <button class="nav-btn" onclick="showSection(3)">Simple, yet Intricate</button>
+    <button class="nav-btn" onclick="showSection(4)">Study Tips</button>
+  </div>
   <div class="sidebar">
     <button class="sidebar-link">
       <a href="index.html"><img src="https://i.postimg.cc/26x1tg4y/home.png"></a>
@@ -49,54 +54,98 @@
   </div>
 
   </div>
-  <div class="main-grid">
-    <div class="front-section1">
+  <div class="front-section1">
 
-      <h1> Where are you?</h1>
-      <p>
-        Not physically. academically. mentally. Are you on top of it, or is it on top of you? <br><br>
-        StudyOS was built for students who want to take back control; control of their time, their goals, and
-        their
-        schoollife.<br><br>
-        And if you ever find yourself behind on tasks, scattered across subjects, overwhelmed before you can
-        even
-        start,
-        you know where to go.<br><br>
-        Help us help you.
-      </p>
+    <h1> Where are you?</h1>
+    <p>
+      Not physically. academically. mentally. Are you on top of it, or is it on top of you? <br><br>
+      StudyOS was built for students who want to take back control; control of their time, their goals, and
+      their
+      schoollife.<br><br>
+      And if you ever find yourself behind on tasks, scattered across subjects, overwhelmed before you can
+      even
+      start,
+      you know where to go.<br><br>
+      Help us help you.
+    </p>
 
-    </div>
+  </div>
 
-    <div class="front-section2">
+  <div class="front-section2">
 
-      <h1> Everything That Matters, Now In One Place.</h1>
-      <p> A focus timer, a task tracker and priority list, along with a goal tracker with progress bars, a
-        schedule
-        creator, AND A SEXY UI, ALL IN ONE? Now, that's something you don't see everyday :&#41
-        <br><br>
-        Find every feature you need in a click or two with our website. Accessible. Authentic. Awesome.
-        <br><br>
+    <h1> Everything That Matters, Now In One Place.</h1>
+    <p> A focus timer, a task tracker and priority list, along with a goal tracker with progress bars, a
+      schedule
+      creator, AND A SEXY UI, ALL IN ONE? Now, that's something you don't see everyday :&#41
+      <br><br>
+      Find every feature you need in a click or two with our website. Accessible. Authentic. Awesome.
+      <br><br>
 
-      </p>
+    </p>
 
-    </div>
+  </div>
 
-    <div class="front-section3">
+  <div class="front-section3">
 
-      <h1> Simple, yet Intricate.</h1>
-      <p> Easy to understand, aesthetically appealing, without the hassle of having to find a new tool every
-        week. Who
-        wouldn't be hooked?
-        <br> <br>
-        This tool is what a student like me wishes I had when I needed it. No need to look around, finding
-        different
-        apps for different things, and everything in one. That too, so well! Exciting, huh.
-      </p>
+    <h1> Simple, yet Intricate.</h1>
+    <p> Easy to understand, aesthetically appealing, without the hassle of having to find a new tool every
+      week. Who
+      wouldn't be hooked?
+      <br> <br>
+      This tool is what a student like me wishes I had when I needed it. No need to look around, finding
+      different
+      apps for different things, and everything in one. That too, so well! Exciting, huh.
+    </p>
 
-    </div>
-    <div>
-    </div>
+  </div>
+  <div class="front-section4">
+    <h1>Study Tips</h1>
+    <ul>
+      <li><strong>Active Recall & Testing:</strong><br> Instead of passively reading, test yourself frequently using
+        flashcards or practice tests to identify gaps in your knowledge.</li>
+      <li><strong>Spaced Repetition:</strong><br> Review material over several days or weeks rather than cramming, which
+        improves long-term retention.</li>
+      <li><strong>Teach Someone Else:</strong><br> Explain concepts in your own words as if teaching them to someone
+        else;
+        this helps identify weak points in your understanding.</li>
+      <li><strong>Create Mind Maps:</strong><br> Use visual diagrams to connect concepts and themes, which is
+        particularly
+        useful for visual learners.</li>
+      <li><strong>Organize & Plan:</strong><br> Create a study schedule to break down topics into manageable chunks,
+        tackling hardest topics first.</li>
+      <li><strong>Optimize Study Environment:</strong><br> Find a quiet, well-lit space free from distractions like
+        social
+        media, and consider changing environments to keep learning fresh.</li>
+      <li><strong>Use the Pomodoro Technique:</strong><br> Study with high focus for 25 minutes, then take a 5-minute
+        break
+        to prevent fatigue.</li>
+      <li><strong>Take Care of Yourself:</strong><br> Sleep is crucial for memory consolidation, so avoid all-nighters.
+        Exercise, healthy snacks, and drinking water also boost brainpower.</li>
+      <li><strong>Active Note-Taking:</strong><br> While reading or watching lectures, create summaries or write down
+        questions to answer later.</li>
+      <li><strong>Use Study Groups:</strong><br> Collaborate with peers to discuss and clarify complex topics.</li>
+    </ul>
+  </div>
+
+
 </body>
+
+
+
+
+
+<script>
+  function showSection(num) {
+    document.querySelectorAll('.front-section1, .front-section2, .front-section3, .front-section4')
+      .forEach(s => s.style.display = 'none');
+    document.querySelector('.front-section' + num).style.display = 'block';
+    document.querySelectorAll('.nav-btn')
+      .forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.nav-btn')[num - 1].classList.add('active');
+  }
+
+  showSection(1);
+</script>
 
 </html>
 
