@@ -20,7 +20,6 @@ body {
     top: 0px;
     z-index: 100;
     right: 0px;
-
     left: 0px;
     text-align: center;
 
@@ -37,18 +36,17 @@ h1 {
 .front-section1,
 .front-section2,
 .front-section3,
-.front-section4,
-.front-section5 {
+.front-section4 {
     display: block;
     height: fit-content;
-    font-size: 30px;
+    font-size: 40px;
     top: 120px;
     width: auto;
     padding: 10%;
     color: white;
     box-shadow: 0 0 20px 15px cornflowerblue;
     border-radius: 50px;
-    background-image: radial-gradient(circle, deepskyblue, darkblue, purple);
+    background-image: radial-gradient(ellipse at top, #00d2ff, #0072ff, #0f0c29);
     margin-bottom: 60px;
 }
 
@@ -58,7 +56,7 @@ h1 {
     top: 0px;
     left: -6px;
     bottom: 0px;
-    width: 12.5%;
+    width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,12 +112,15 @@ h1 {
 .nav-tabs {
     position: absolute;
     top: 100px;
-    left: 13%;
+    left: 0;
     right: 0;
+    height: 10%;
     z-index: 99;
     display: flex;
     gap: 10px;
     padding: 10px 20px;
+    justify-content: center;
+
 }
 
 .nav-btn {
@@ -143,8 +144,7 @@ h1 {
 .front-section1,
 .front-section2,
 .front-section3,
-.front-section4,
-.front-section5 {
+.front-section4 {
     animation: fadeIn 1s ease;
 }
 
